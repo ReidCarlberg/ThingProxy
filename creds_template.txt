@@ -1,0 +1,13 @@
+NOTES:
+* This file is for your convenience, it isn't part of the rails app.
+* Best practice is to avoid committing your OAuth2 details to a repo, so you set them as environmental variables instead.
+* This works on a Mac, may require adjustment for other OS
+* Here's a nice article on Config Vars over at Heroku: http://devcenter.heroku.com/articles/config-vars
+* this is for the password Oauth2 flow designed to facilitate integration activities.
+* where should you keep you actual creds? Up to you. I place mine in an encrypted note.
+
+export SALESFORCE_OAUTH2_KEY=[INSERT YOUR KEY HERE]
+export SALESFORCE_OAUTH2_SECRET=[INSERT YOUR SECRET HERE]
+export SALESFORCE_OAUTH2_USERNAME=[INSERT YOUR SECRET HERE]
+export SALESFORCE_OAUTH2_PASSWORD=[INSERT YOUR SECRET HERE]
+export SALESFORCE_OAUTH2_URI=https://login.salesforce.com/services/oauth2/token

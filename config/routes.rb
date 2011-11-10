@@ -2,6 +2,8 @@ ThingProxy::Application.routes.draw do
   get "queue/index"
 
   match 'queue/update/:sensor/:measure/:value' => 'queue#update'
+  
+  match 'queue/command/:type/:param1/:param2' => 'queue#command'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
